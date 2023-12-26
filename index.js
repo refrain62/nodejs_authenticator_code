@@ -13,7 +13,7 @@ console.log( secret.base32 );
 
 // QRコードを生成
 const url = speakeasy.otpauthURL({
-  secret: secret.ascii,
+  secret: secret.otpauth_url,
   label: encodeURIComponent('example.com'),
   issuer: 'example test'
 });
